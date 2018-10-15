@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: #56bfdf; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.neighborhood_list {
+  background-color: #cf40ac;
+  grid-column: 2/4;
+  margin-left: 20px;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  justify-self: stretch;
+  align-self: start; }
+
+.hood_section {
+  width: 100%;
+  grid-column: 1/-1;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto 1fr 1fr; }
