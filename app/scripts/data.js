@@ -115,8 +115,8 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "BRIGHTON/DUNLAP",
-                          "hoodlat": 47.5360554,
-                          "hoodlong": -122.2752313
+                          "hoodlat": 47.539015,
+                          "hoodlong": -122.276049
                         },
                         {
                           "hoodname": "CAPITOL HILL",
@@ -195,8 +195,8 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "HIGH POINT",
-                          "hoodlat": 47.53315689999999,
-                          "hoodlong": -121.9784512
+                          "hoodlat": 47.550208,
+                          "hoodlong": -122.369238
                         },
                         {
                           "hoodname": "HIGHLAND PARK",
@@ -205,68 +205,68 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "HILLMAN CITY",
-                          "hoodlat": 47.5494692,
-                          "hoodlong": -122.280412
+                          "hoodlat": 47.551260,
+                          "hoodlong": -122.2800648
                         },
                         {
                           "hoodname": "JUDKINS PARK/NORTH BEACON HILL",
-                          "hoodlat": 47.6059232,
-                          "hoodlong": -122.2835373
+                          "hoodlat": 47.595068,
+                          "hoodlong": -122.302056
                         },
                         {
                           "hoodname": "LAKECITY",
-                          "hoodlat": 47.63963020000001,
-                          "hoodlong": -122.3996602
+                          "hoodlat": 47.713960,
+                          "hoodlong": -122.298169
                         },
                         {
                           "hoodname": "LAKEWOOD/SEWARD PARK",
-                          "hoodlat": 47.552585,
-                          "hoodlong": -122.300937
+                          "hoodlat": 47.564425,
+                          "hoodlong": -122.271790
                         },
                         {
                           "hoodname": "MADISON PARK",
-                          "hoodlat": 47.6211233,
-                          "hoodlong": -122.3050083
+                          "hoodlat": 47.635403,
+                          "hoodlong": -122.287630
                         },
                         {
                           "hoodname": "MADRONA/LESCHI",
-                          "hoodlat": 47.64603779999999,
-                          "hoodlong": -122.3129235
+                          "hoodlat": 47.626665,
+                          "hoodlong": -122.318027
                         },
                         {
                           "hoodname": "MAGNOLIA",
-                          "hoodlat": 46.99201859999999,
-                          "hoodlong": -120.5430771
+                          "hoodlat": 47.650662,
+                          "hoodlong": -122.403151
                         },
                         {
                           "hoodname": "MID BEACON HILL",
-                          "hoodlat": 48.7766868,
-                          "hoodlong": -121.8144143
+                          "hoodlat": 47.555902,
+                          "hoodlong": -122.307912
                         },
                         {
                           "hoodname": "MILLER PARK",
-                          "hoodlat": 47.538914,
-                          "hoodlong": -122.2861044
+                          "hoodlat": 47.621638,
+                          "hoodlong": -122.304729
                         },
                         {
                           "hoodname": "MONTLAKE/PORTAGE BAY",
-                          "hoodlat": 47.5811956,
-                          "hoodlong": -122.3865523
+                          "hoodlat": 47.646992,
+                          "hoodlong": -122.304395
                         },
                         {
                           "hoodname": "MORGAN",
-                          "hoodlat": 47.5794213,
-                          "hoodlong": -122.3113231
+                          "hoodlat": 47.544695,
+                          "hoodlong": -122.280756
                         },
                         {
                           "hoodname": "MOUNT BAKER",
-                          "hoodlat": 47.5623473,
-                          "hoodlong": -122.3654777
+                          "hoodlat": 47.578502,
+                          "hoodlong": -122.288372
                         },
                         {
                           "hoodname": "NEW HOLLY",
-                          "hoodlat": 47.7085904,
-                          "hoodlong": -122.3232354
+                          "hoodlat": 47.580907,
+                          "hoodlong": -122.386301
                         },
                         {
                           "hoodname": "NORTH ADMIRAL",
@@ -275,8 +275,8 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "NORTH BEACON HILL",
-                          "hoodlat": 47.67478329999999,
-                          "hoodlong": -122.3566014
+                          "hoodlat": 47.579217,
+                          "hoodlong": -122.310166
                         },
                         {
                           "hoodname": "NORTH DELRIDGE",
@@ -285,13 +285,13 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "NORTHGATE",
-                          "hoodlat": 47.6015184,
-                          "hoodlong": -122.3342975
+                          "hoodlat": 47.712053,
+                          "hoodlong": -122.332487
                         },
                         {
                           "hoodname": "PHINNEY RIDGE",
-                          "hoodlat": 47.6323268,
-                          "hoodlong": -122.3568641
+                          "hoodlat": 47.676176,
+                          "hoodlong": -122.355066
                         },
                         {
                           "hoodname": "PIGEON POINT",
@@ -300,23 +300,23 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "PIONEER SQUARE",
-                          "hoodlat": 47.7192927,
-                          "hoodlong": -122.2951857
+                          "hoodlat": 47.601144,
+                          "hoodlong": -122.331844
                         },
                         {
                           "hoodname": "QUEEN ANNE",
-                          "hoodlat": 47.5038209,
-                          "hoodlong": -122.2603777
+                          "hoodlat": 47.632378,
+                          "hoodlong": -122.356431
                         },
                         {
                           "hoodname": "RAINIER BEACH",
-                          "hoodlat": 47.5595846,
-                          "hoodlong": -122.2709395
+                          "hoodlat": 47.513166,
+                          "hoodlong": -122.264055
                         },
                         {
                           "hoodname": "RAINIER VIEW",
-                          "hoodlat": 47.6346093,
-                          "hoodlong": -122.2796452
+                          "hoodlat": 47.503405,
+                          "hoodlong": -122.263022
                         },
                         {
                           "hoodname": "ROOSEVELT/RAVENNA",
@@ -360,8 +360,8 @@ const neighborhood_long_lats = [
                         },
                         {
                           "hoodname": "UNIVERSITY",
-                          "hoodlat": 47.4312399,
-                          "hoodlong": -120.3354938
+                          "hoodlat": 47.661215,
+                          "hoodlong": -122.309229
                         },
                         {
                           "hoodname": "WALLINGFORD",

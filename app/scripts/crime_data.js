@@ -1,6 +1,6 @@
 
 function crime(){
-//     var crime_hood = this.id;
+     var crime_hood = this.id;
 //     console.log('lll');
 //     var crimes = []
 //     var start_date = '2015-01-01';
@@ -43,7 +43,7 @@ function crime(){
   
 // });
 
-longLat();
+longLatRefresh(crime_hood);
 }
 // function crime(){
 //    var crime_hood = this.id;

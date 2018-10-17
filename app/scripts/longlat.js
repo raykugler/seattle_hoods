@@ -1,39 +1,68 @@
 
 
 
+var map;
+var service;
+var infowindow;
 
-function longLat(){
-console.log('long_lat');
-let qa = 'Queen Anne';
-let longslats = [];
-let hoodspec = {
-  hoodname :'',
-  hoodlat: 0,
-  hoodlong: 0,
+function longLat() {
+
+  let loc = this.id;
+  let lat = 47.608195;
+  let lng = -122.332661;
+  var mapProp= {
+      center:new google.maps.LatLng(lat, lng),
+      zoom:10,
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  
 }
 
+function longLatRefresh(crime_hood) {
+  let loc = crime_hood;
+  let newlat = 0;
+  let newlng = 0;
+  for (i = 0; i < neighborhood_long_lats.length; i++){
+    console.log(loc);
+  if(neighborhood_long_lats[i].hoodname === loc){
+   newlat = neighborhood_long_lats[i].hoodlat;
+   newlng = neighborhood_long_lats[i].hoodlong;
+   console.log(newlat + newlng);
+ }};
+  var mapProp= {
+      center:new google.maps.LatLng(newlat, newlng),
+      zoom:15,
 
-for (i = 0; i < neighborhoods.length; i++){
-  longslats[i] ={
-  hoodname: neighborhoods[i],
-  hoodlat: longsandlats[i * 2],
-  hoodlong: longsandlats[i * 2 + 1],
-  }
- }
+}
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  
+}
+
+function restaurants(){
+  
+}
+
+// for (i = 0; i < neighborhoods.length; i++){
+//   longslats[i] ={
+//   hoodname: neighborhoods[i],
+//   hoodlat: longsandlats[i * 2],
+//   hoodlong: longsandlats[i * 2 + 1],
+//   }
+//  }
 // for (i = 0; i < neighborhoods.length; i++){
 //   neighborhood_loc = neighborhoods[i];
 //   console.log(neighborhood_loc);
-
-//  $.ajax({
-//     url: "https://maps.googleapis.com/maps/api/geocode/json?address="+neighborhood_loc+"+WA&key=AIzaSyDTnYPhbZaoz5F9Nx4K_kYczJ0iwij7OX0",
-//      type: "GET",
-//      }).done(function(loc_data){
-//       longslats.push(loc_data.results[0].geometry.location.lat);
-//       longslats.push(loc_data.results[0].geometry.location.lng);
+// https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
+// $.ajax({
+//   url: "https://maps.googleapis.com/maps/api/place/details/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&fields=name&key=AIzaSyCssmb2izo9FOE5vYnc4jx_x1gHMrm5ncI",
+//       type: "GET",
+//       }).done(function(loc_data){
+//         console.log(loc_data);
+//       })}
+//  //       longslats.push(loc_data.results[0].geometry.location.lng);
       
 //   })}
-console.log(longslats);
-  }
+
 // }).done(function(data) {
 //     var longlatspec = [];
 //   data.forEach(long_lat => { 
@@ -42,7 +71,7 @@ console.log(longslats);
 // for (i = 0; i < myJSONResult.results.length; i++) {
 //   myAddress[i] = myJSONResult.results[i].formatted_address;
 
-
+longLat(this.id);
 longsandlats=[
   47.5611253,
   -122.386796,
