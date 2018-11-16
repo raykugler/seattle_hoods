@@ -11,15 +11,19 @@
     <!--endbuild-->
 </head>
 <body>
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <main class='container'>
     <section class='neighborhood_list' id='nav_list'>
 
     </section>
+    <section id='chart_container'>
+      <canvas id="myChart">
+        
+        
+      </canvas>
+    </section>
     
-<section id='googleMap'>
 
-</section>
     
   </main>
    <!-- build:js js/main.min.js -->
@@ -31,6 +35,7 @@
    <script src="./scripts/spd_hood_split.js"></script>
    <script src="./scripts/longlat.js"></script>
    <script src="./scripts/yelp.js"></script>
+   <script src="./scripts/chart.js"></script>
    
   
   <!-- endbuild -->

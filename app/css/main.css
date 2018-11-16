@@ -37,3 +37,11 @@ html, body {
   grid-column: 4/-1;
   grid-row: 1/6;
   align-self: center; }
+
+#chart_container {
+  grid-column: 4/-1;
+  justify-self: center; }
+
+#myChart {
+  width: 500px;
+  height: 500px; }

@@ -1,49 +1,58 @@
 
 function crime(){
      var crime_hood = this.id;
-//     console.log('lll');
-//     var crimes = []
-//     var start_date = '2015-01-01';
-// $.ajax({
-//     url: "https://data.seattle.gov/resource/xurz-654a.json",
-//     type: "GET",
-//     data: {
-//       "$limit" : 500000,
-//       "$$app_token" : "YcG5XVo8DJz8Zzk5db9CjuGIr"
-//     }
-// }).done(function(data) {
-//     var crime_count = 0;
-//   data.forEach(crime => { 
-//     if (crime.neighborhood === crime_hood && crime.reported_date > '2015-01-01'){
-//         crime_count++;
-//         crimes.push(crime.crime_subcategory)
-//     }; 
-// });
+    //console.log('lll');
+    var crimes = []
+    var start_date = '2015-01-01';
+$.ajax({
+    url: "https://data.seattle.gov/resource/xurz-654a.json",
+    type: "GET",
+    data: {
+      "$limit" : 500000,
+      "$$app_token" : "YcG5XVo8DJz8Zzk5db9CjuGIr"
+    }
+}).done(function(data) {
+    var crime_count = 0;
+  data.forEach(crime => { 
+    if (crime.neighborhood === crime_hood && crime.reported_date > '2015-01-01'){
+        crime_count++;
+        crimes.push(crime.crime_subcategory)
+    }; 
+});
 
-// var unique_crimes = []
-//     for(let i = 0;i < crimes.length; i++){
-//         if(unique_crimes.indexOf(crimes[i]) == -1){
-//             unique_crimes.push(crimes[i])
-//         }
-//     }
-//   console.log(crimes);
-//   console.log(unique_crimes);
-
-//   for(p = 0; p < unique_crimes.length; p++){
-//       var specific_crime= unique_crimes[p];
-//       var spec_crime_count = 0;
-//       for (y = 0; y < crimes.length; y++){
+var unique_crimes = []
+    for(let i = 0;i < crimes.length; i++){
+        if(unique_crimes.indexOf(crimes[i]) == -1){
+            unique_crimes.push(crimes[i])
+        }
+    }
+  //console.log(crimes);
+  //console.log(unique_crimes);
+var crime_count = [];
+var spec_crime = [];
+  for(p = 0; p < unique_crimes.length; p++){
+      var specific_crime= unique_crimes[p];
+      var spec_crime_count = 0;
+      spec_crime.push(specific_crime);
+      for (y = 0; y < crimes.length; y++){
        
-//         if(specific_crime === crimes[y]){
-//               spec_crime_count += 1;
-//         } 
-//       }
-//       console.log(specific_crime + ': ' + spec_crime_count);
-//   }
-  
-// });
+        if(specific_crime === crimes[y]){
+              spec_crime_count += 1;
+        } 
+       
+      }
+      crime_count.push(spec_crime_count);
+      
+      //console.log(specific_crime + ': ' + spec_crime_count);
+         
+  }
+  var dataSet = [unique_crimes, crime_count];
+  //console.log(dataSet[0]); 
+  makeGraph(dataSet[0], dataSet[1]);
+// return dataSet;
+});
 
-longLatRefresh(crime_hood);
+//longLatRefresh(crime_hood);
 }
 // function crime(){
 //    var crime_hood = this.id;
